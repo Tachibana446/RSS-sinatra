@@ -1,6 +1,7 @@
 require 'sinatra'
 
 get '/' do
-	"hello World."
+	@hello = "hello World."
+	erb :index
 end
 
