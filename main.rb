@@ -7,3 +7,6 @@ get '/' do
 	erb :index
 end
 
+get '/users/:user_name' do
+	"Hello #{params[:user_name]} . This is your page."
+end
