@@ -1,4 +1,7 @@
 <ul>
 	<li><a href="<%= @rss.channel.link %>"><%= @rss.channel.title %></a></li>
+	<% @rss.items.each do |entry| %>
+		<li><a href="<%= entry.link %>"><%= entry.title %></li>
+	<% end %>
 </ul>
 

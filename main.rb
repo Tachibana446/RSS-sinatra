@@ -2,7 +2,7 @@ require 'sinatra'
 require 'rss'
 
 get '/' do
-	site = "http://imgaz.pixiv.net/news/feed/12.xml"
+	site = "http://rss.rssad.jp/rss/h/wired/feed.rdf"
 	@rss = RSS::Parser.parse(site)
 	erb :index
 end
