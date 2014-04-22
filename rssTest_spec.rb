@@ -1,6 +1,6 @@
 require 'rss'
 
-site = "http://imgaz.pixiv.net/news/feed/12.xml" 
+site = "http://feeds.feedburner.com/hatena/b/hotentry"
 
 describe "Parse and Read RSS feed ?" do
 	before do
