@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'rss'
+require 'rdiscount'
 
 get '/' do
 	site = "http://feeds.feedburner.com/hatena/b/hotentry"
@@ -7,3 +8,7 @@ get '/' do
 	erb :index
 end
 
+get '/users/:user_name' do
+	@user_name = params[:user_name]
+	erb :user 
+end
