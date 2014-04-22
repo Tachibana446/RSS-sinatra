@@ -8,5 +8,6 @@ get '/' do
 end
 
 get '/users/:user_name' do
-	"Hello #{params[:user_name]} . This is your page."
+	@user_name = params[:user_name]
+	erb:user
 end
